@@ -12,12 +12,7 @@ public class UserController {
 
 	@GetMapping("/user")
 	public ModelAndView getUser() {
-		ModelAndView mav = new ModelAndView();
-		mav.addObject("id", 101);
-		mav.addObject("name", "Raju");
-		mav.addObject("email", "raju@gmail.com");
-		mav.setViewName("user");
-
+		
 		return mav;
 	}
 }
